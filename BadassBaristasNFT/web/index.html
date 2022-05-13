@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--SVGS-->
+    <a style="display:none" href="https://icons8.com/icon/85038/heart">Heart icon by Icons8</a>
+    <a style="display:none" href="https://icons8.com/icon/22050/speech-bubble">Speech Bubble icon by Icons8</a>
+    <a style="display:none" href="https://icons8.com/icon/7Gc3zAVnhfkK/retweet">Retweet icon by Icons8</a>
+    <!--SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="../favicon.png">
+    <title>Badass Baristas Web</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_wrapper">
+            <img id="header_image" src="../Images/LogoNft.png" alt="">
+            <nav id="header_navigation">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#about_us">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#mint">
+                            Mint
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#roadmap">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#team">
+                            Team
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#faq">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="social_buttons">
+                <a href="https://twitter.com/BadassBaristas" target="_blank">
+                    <svg id="twitter_svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/badass_baristas/" target="_blank">
+                    <svg id="instagram_svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                </a>
+                <a href="discord.gg/ZZktu9mhHd" target="_blank">
+                    <svg id="discord_svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                </a>
+
+            </div>
+            <input id="header_input" type="checkbox">
+            <button id="header_dropdown">
+                <span id="first_span"></span>
+                <span id="second_span"></span>
+                <span id="third_span"></span>
+            </button>
+        </div>
+    </header>
+    <section id="home">
+        <div id="main_home_wrapper">
+            <img id="header_image_wrapper" src="../Images/GifMain.gif" alt="">
+            <div id="home_content">
+                <h1 id="home_content_header">Badass Baristas</h1>
+                <p id="home_content_p">"We are cups, constantly and quietly being filled. Trick is knowing how to tip ourselves over and let the beautiful stuff out."
+                </p>
+                <div id="home_image_container">
+                    <a href="#team"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about_us">
+        <img id="about_us_image" src="../Images/roadmap-gif.gif" alt="">
+        <div id="about_us_content">
+            <h3 id="about_us_header">What are the Badass Baristas?</h3>
+            <p id="about_us_decription">The <span>Badass Baristas</span> is a colletion of 9,999 randomly generated NFTs living on the Ethereum blockchain. Each cup of coffee is equally delicious and beautiful, although some traits are more rare than others!</p>
+            <ul id="about_us_list">
+                <li> * Over 150 hand drawn traits and some are more rare than others</li>
+                <li> * Access to the best crypto coffee community as well as super cool giveaways</li>
+                <li> * Exclusive content that can be unlocked only by being a member of the Badass Team! </li>
+            </ul>
+            <div id="about_us_button_wrapper">
+                <div id="top_button">
+                    <a href="http://discord.gg/ZZktu9mhHd
+                    " target="_blank">
+                        <div id="bottom_button">
+                            <svg id="discord_svg" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                            <span>Join Us!</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <span>Head in to discover your passion for coffee!</span>
+        </div>
+    </section>
+    <section id="mint">
+        <div id="mint_content_wrapper">
+            <div class="mint_custom_wrapper">
+                <div class="mint_content_row" id="content_row_one">
+                    <div id="content_card_one" class="content_card">
+                        <div id="content_bottom_one" class="content_card_bottom">
+                            <img class="content_image" src="../Images/220-modified.png" alt="">
+                        </div>
+                    </div>
+                    <div id="content_card_two" class="content_card">
+                        <div id="content_bottom_two" class="content_card_bottom">
+                            <img class="content_image" src="../Images/239-modified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mint_content_row" id="content_row_two">
+                    <div id="content_card_three" class="content_card">
+                        <div id="content_bottom_three" class="content_card_bottom">
+                            <img class="content_image" src="../Images/24-modified.png" alt="">
+
+                        </div>
+                    </div>
+                    <div id="content_card_four" class="content_card">
+                        <div id="content_bottom_four" class="content_card_bottom">
+                            <img class="content_image" src="../Images/46-modified.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mint_custom_content">
+                <h3 id="mint_header">Mint Your Badass Barista | COMING SOON </h3>
+                <span id="mint_totalsupply">Price per one NFT is 0.05 eth + gas</span>
+                <div class="mint_amount_wrapper">
+                    <button id="minus">
+                        <img src="../svgfolder/minus-svgrepo-com (2).svg" alt="">
+                    </button>
+                    <span id="mint_amount">Coming Soon</span>
+                    <button id="plus">
+                        <img src="../svgfolder/plus-svgrepo-com (2).svg" alt="">
+                    </button>
+                </div>
+                <div class="mint_container">
+                    <button id="mint_button_bottom"></button>
+                    <button id="mint_button"><b>Coming Soon</b></button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="why_own_barista">
+        <h3 id="why_header">Why Own A Barista?</h3>
+        <div id="why_content_wrapper">
+            <div id="first_why">
+                <div id="why_profile">
+                    <div id="profile_wrapper">
+                        <img src="../Images/7.png" alt="" id="profile_img">
+                        <div id="profile_content">
+                            <h5 id="profile_content_header">Badass Baristas
+                                <span><b>@BadassBaristas</b></span>
+                            </h5>
+                            <p id="profile_tweet"> Show off the only 9,999 unique and awesome looking Coffees as profile pictures!</p>
+                            <div id="profile_engagement">
+                                <img src="https://img.icons8.com/windows/24/000000/speech-bubble--v1.png" /> <span>1.02K</span>
+                                <img src="https://img.icons8.com/fluency-systems-regular/48/000000/retweet.png" />
+                                <span>2.0k</span>
+
+                                <img src="https://img.icons8.com/material-outlined/24/000000/like--v1.png" />
+                                <span>5.1k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="why_rewards">
+                    <img src="../Images/coffee-beans.png" alt="">
+                    <div id="rewards_content">
+                        <h5 id="rewards_header">Coffee Themed Rewards</h5>
+                        <p id="rewards_content_p">Weekly coffee and coffee machinery rewards for holders. As well as free courses and masterclasses for the biggest coffee enthusiasts!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="second_why">
+                <div id="royalties_why">
+                    <div id="royalties_content">
+                        <h5 id="royalties_header">Royalties for Coffee Shops</h5>
+                        <p id="royalties_content_p">5% Royalties and 100% of future profits go straith to building an IRL coffee shop/roastery and a metaverse themed shop!</p>
+                    </div>
+                    <img src="../Images/coffee-shop.png" alt="">
+                </div>
+                <div id="community_why">
+                    <div id="community_content">
+                        <h5 id="community_header">Community driven project</h5>
+                        <p id="community_content_p">Every holder will have a say on community fund and the projects future! The roadmap is merely a direction we are heading not the destination!</p>
+                    </div>
+                    <img src="../Images/latte.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="roadmap">
+        <h3 id="roadmap_header">Roadmap</h3>
+        <p id="roadmap_p">Our roadmap has no promises and unrealistic expectations! It has been created so it is achievable and rational. This is only the initial V1 Roadmap that we aim to accomplish a few weeks after launch. </p>
+        <span>V2 and V3 roadmaps will be decided by the community</span>
+        <div id="roadmap_content">
+            <div class="roadmap_content_flow">
+                <div id="roadmap_content_one">
+                    <img src="../Images/idea.png" alt="">
+                    <h5 class="roadmap_content_header">Ideas</h5>
+                    <span class="roadmap_content_span">Merch</span>
+                    <span class="roadmap_content_span">Coffee Bag Launch</span>
+                    <span class="roadmap_content_span">Custom Esspresso Makers</span>
+                    <span class="roadmap_content_span">Online Masterclass</span>
+                </div>
+                <div id="roadmap_content_two">
+                    <img src="../Images/calendar.png" alt="">
+                    <h5 class="roadmap_content_header">Plans</h5>
+                    <span class="roadmap_content_span">Coffe Bag Giveaways</span>
+                    <span class="roadmap_content_span">Esspresso maker Raffle</span>
+                    <span class="roadmap_content_span">Website V2</span>
+                    <span class="roadmap_content_span">Charity</span>
+                </div>
+            </div>
+            <div class="roadmap_content_flow">
+                <div id="roadmap_content_three">
+                    <img src="../Images/work-in-progress.png" alt="">
+                    <h5 class="roadmap_content_header">Working On</h5>
+                    <span class="roadmap_content_span">Post Mint Marketing</span>
+                    <span class="roadmap_content_span">Release $COFFEE</span>
+                    <span class="roadmap_content_span">Coffee Shop</span>
+                    <span class="roadmap_content_span">Guide V1</span>
+                    <span class="roadmap_content_span">Roastery(staking)</span>
+                    <span class="roadmap_content_span">Sustainable Rewards</span>
+                </div>
+                <div id="roadmap_content_four">
+                    <img src="../Images/thumb-ups.png" alt="">
+                    <h5 class="roadmap_content_header">Done</h5>
+                    <span class="roadmap_content_span">Website V1</span>
+                    <span class="roadmap_content_span">First Coffee Bag Design</span>
+                    <span class="roadmap_content_span">Discord</span>
+                    <span class="roadmap_content_span">Tokenomics Model</span>
+                    <span class="roadmap_content_span">First Marketing</span>
+                    <span class="roadmap_content_span">Social Media</span>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section id="team">
+        <h3 id="team_header">Meet The Team</h3>
+        <div id="team_wrapper">
+            <div class="team_member_card">
+                <img class="member_image" src="../Images/TeamPictures/Developer.png" alt="">
+                <h5 class="member_decription_header">ReinaVe</h5>
+                <p class="member_decription">Founder.Complete Coffee addict and should tone it down a little. Dev & BlockChain </p>
+
+            </div>
+            <div class="team_member_card">
+                <img class="member_image" src="../Images/TeamPictures/Marketing.png" alt="">
+                <h5 class="member_decription_header">Stuga</h5>
+                <p class="member_decription">Founder.Dad of a 2 year old, so coffee is mandatory! Social Media Guru. </p>
+
+            </div>
+            <div class="team_member_card">
+                <img class="member_image" src="../Images/TeamPictures/Artist.png" alt="">
+                <h5 class="member_decription_header">Edzons</h5>
+                <p class="member_decription">A jack of all trades. Complete mastermind in content creation! </p>
+
+            </div>
+            <div class="team_member_card">
+                <img class="member_image" src="../Images/TeamPictures/ArtistGirl.png" alt="">
+                <h5 class="member_decription_header">K-Kiki</h5>
+                <p class="member_decription">An young up and coming artist that loves NFTs. </p>
+
+            </div>
+            <div class="team_member_card">
+                <img class="member_image" src="../Images/TeamPictures/WebDev.png" alt="">
+                <h5 class="member_decription_header">Gintesse</h5>
+                <p class="member_decription">The Web Dev guy of the project! It's science to us but not him </p>
+
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <h3 id="faq_header">Frequently Asked Questions</h3>
+        <div class="faq_content_wrapper">
+            <div class="question_wrapper">
+                <div class="question_header">
+                    <h4 class="question_title">When will Minting start?</h4>
+                    <input type="checkbox" class="faq_input">
+                    <button class="question_icon">
+                        <span class="question_plus"></span>
+                        <span class="question_minus"></span>
+                    </button>
+                </div>
+                <div class="question_answer_wrapper">
+                    <p class="question_answer">The official mint date is coming soon!</p>
+                </div>
+
+            </div>
+            <div class="question_wrapper">
+                <div class="question_header">
+                    <h4 class="question_title">How much is the Minting cost?</h4>
+                    <input type="checkbox" class="faq_input">
+                    <button class="question_icon">
+                        <span class="question_plus"></span>
+                        <span class="question_minus"></span>
+                    </button>
+                </div>
+                <div class="question_answer_wrapper">
+                    <p class="question_answer">There will be only the public sale where one Badass Barista NFT will cost will be announced soon!</p>
+                </div>
+
+            </div>
+            <div class="question_wrapper">
+                <div class="question_header">
+                    <h4 class="question_title">Will we get our own coffee?</h4>
+                    <input type="checkbox" class="faq_input">
+                    <button class="question_icon">
+                        <span class="question_plus"></span>
+                        <span class="question_minus"></span>
+                    </button>
+                </div>
+                <div class="question_answer_wrapper">
+                    <p class="question_answer">YES!Every Badass Barista holder will be eligable for coffee themed giveaways including coffee beans and receive a discount for purchases.</p>
+                </div>
+
+            </div>
+            <div class="question_wrapper">
+                <div class="question_header">
+                    <h4 class="question_title">What is a Badass Barista?</h4>
+                    <input type="checkbox" class="faq_input">
+                    <button class="question_icon">
+                        <span class="question_plus"></span>
+                        <span class="question_minus"></span>
+                    </button>
+                </div>
+                <div class="question_answer_wrapper">
+                    <p class="question_answer">Badass Baristas are a NFT collection that brings together coffee lovers as well as crypto ethusiasts!</p>
+                </div>
+
+            </div>
+            <div class="question_wrapper">
+                <div class="question_header">
+                    <h4 class="question_title">How many NFTs can I mint?</h4>
+                    <input type="checkbox" class="faq_input">
+                    <button class="question_icon">
+                        <span class="question_plus"></span>
+                        <span class="question_minus"></span>
+                    </button>
+                </div>
+                <div class="question_answer_wrapper">
+                    <p class="question_answer">You can Mint up to 20 NFTs per TXN and up to 40 per one wallet!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Full Right reserved by @Badass Baristas</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="script.js"></script>
+<script src="scroll.js"></script>
+<script src="contract.js"></script>
+<!--
+<script src="scroll.js"></script>
+-->
+
+
+</html>
