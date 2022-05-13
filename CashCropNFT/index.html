@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Styles Google Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
+<!-- FONT AWESOME ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cash Crop</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico?">
+</head>
+
+<body>
+
+    <div id="connect_reminder_wrapper">
+        <div id="connect_reminder">
+            <div id="close_wrapper">
+                <span>Reminder</span>
+                <img id="reminder_close_x" src="./SvgFolder/x-svgrepo-com.svg" alt="">
+            </div>
+            <div id="info_reminder">
+                <p>To Mint you have to Connect your Metamask wallet to the website by pressing the "Connect" button and accepting the transaction. *Make sure you have extra eth for gas!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="complete_wrapper">
+        <div class="outter_div bottom_outter"></div>
+        <div class="outter_div top_outter">
+            <div class="information_wrapper">
+                <div class="connect_button_wrapper">
+                    <button class="connected" id=connect_btn_bottom></button>
+                    <button class="info_button" id=connect_btn_top>CONNECT</button>
+                </div>
+                <div class="info_header_wrapper">
+                    <img src="./PROJECTNAME.png" alt="PROJECTNAME" id="header_image">
+                </div>
+                <div class="social_links">
+                    <button class="link_button">
+                        <a href="https://raritysniper.com/nft-drops-calendar" target="_blank">
+                            <img src="./RarityDniper.png" alt="RaritySniper"> RaritySniper</a>
+                    </button>
+                    <button class="link_button twitter">
+                        <a href="https://twitter.com/CashCropNFT" target="_blank">
+                             <img src="./SvgFolder/twitter-brands.svg" alt=""> Twitter</a>
+                    </button>
+                    
+                </div>
+                
+                
+            </div>
+            <div class="mint_wrapper">
+                <div class="mint_main"></div>
+                <div class="mint_main" id="mint_main_top">
+                    <h3 class="mint_main_header"><b>The Dankest Buds on Web3 provided by Your Friendly Metahood Plug</b> </h3>
+                    <span>Total supply - 420 FREE Dank Budz</span>
+                    <span>Max per wallet 2!</span>
+                    <div class="minting_amount_wrapper">
+                        <button id="minus">
+                            <img class="svgs_buttons"  src="./SvgFolder/minus-svgrepo-com (1).svg" alt="">
+                        </button>
+                        <span id="mint_amount">Set Mint Amount</span>
+                        <button id="plus">
+                            <img class="svgs_buttons" src="./SvgFolder/plus-svgrepo-com (1).svg" alt="">
+                        </button>
+                    </div>
+                    <span id="total_price">Total Price - None</span>
+                    <div class="mint_button">
+                        <button id="mint_top">MINT</button>
+                    </div>
+                </div>
+
+                <div class="mint_main_circle">
+                    <img src="./FiverCircle.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+<script src="script.js"></script>
+<script src="countdown.js"></script>
+
+</html>
